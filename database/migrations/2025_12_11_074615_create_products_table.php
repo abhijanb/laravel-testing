@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('product_code')->unique();
             $table->integer('product_price');
             $table->integer('product_quantity');
-            $table->string('product_image');
+            $table->string('product_image')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

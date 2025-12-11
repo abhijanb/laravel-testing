@@ -55,7 +55,7 @@ class ProductService
     public function delete($id){
         $product= $this->productModel->findOrFail($id);
         if($product){
-            Storage::delete($product->product_image);
+            // Storage::delete($product->product_image);
             return $product->delete();
         }
         return false;
